@@ -10,8 +10,11 @@ system and review the set of Unix core-utils one needs for everyday scripting.
 Also you will learn the bash shell and its core language features, including
 
 • control statements (if,for,while, . . . )
+
 • file or user input/output
-• bash functions                                                            
+
+• bash functions
+
 • features simplifying code reuse and script structure
 
  The final exercises will be concerned with the extraction of information (e.g.
