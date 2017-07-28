@@ -1,19 +1,23 @@
 #!/bin/bash
 
 @test "Default" {
-  run bash ex02.sh resources/1 clown qwe baium
+  run bash ex02.sh resources/1 Ipsum is and
 
   [ "$status" -eq 0 ]
-  [ "$output" = "clown 4
+  [ "$output" = "Ipsum 4
 1
-4
-6
+2
 7
-qwe 2
+9
+is 3
+1
+6
+8
+and 4
+1
+2
 3
-5
-baium 1
-2" ]
+8" ]
 }
 
 @test "No args" {
@@ -24,35 +28,41 @@ baium 1
 }
 
 @test "Without right args" {
-  run bash ex02.sh resources/1 lol cat vim
+  run bash ex02.sh resources/1 Helios Technologies Great
 
   [ "$status" -eq 0 ]
-  [ "$output" = 'lol 0
-cat 0
-vim 0' ]
+  [ "$output" = 'Helios 0
+Technologies 0
+Great 0' ]
 }
 
 
 @test "With empty lines" {
-  run bash ex02.sh resources/3 toto tata tyty
+  run bash ex02.sh resources/3 like page sometimes
 
   [ "$status" -eq 0 ]
-  [ "$output" = 'toto 1
-3
-tata 1
+  [ "$output" = 'like 2
 7
-tyty 1
-11' ]
+36
+page 2
+2
+10
+sometimes 2
+13
+36' ]
 }
 
 @test "with number" {
-  run bash ex02.sh resources/4 1111 2222 3333
+  run bash ex02.sh resources/4 1.10.32 2000 45
 
   [ "$status" -eq 0 ]
-  [ "$output" = "1111 1
+  [ "$output" = "1.10.32 3
+7
+12
+15
+2000 1
+3
+45 2
 2
-2222 1
-5
-3333 1
-3" ]
+9" ]
 }
