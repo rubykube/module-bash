@@ -47,5 +47,5 @@ Useful Bash Resources
 • http://www.shellcheck.net/                                                             
 • http://tldp.org/guides.html                                                            
 • https://linux.die.net/man/1/bash 
-Also thanks for material for the advanced bash scripting course at Heidelberg University
+Also thanks for material for the advanced bash scripting course at Heidelberg University                                               
 • https://github.com/mfherbst/bash-course
