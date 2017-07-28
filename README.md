@@ -44,5 +44,5 @@ Useful Bash Resources
 
 •http://www.shellcheck.net/                                                             
 •http://tldp.org/guides.html                                                            
-•https://linux.die.net/man/1/bash 
+•https://linux.die.net/man/1/bash                                                                                                
 •https://github.com/mfherbst/bash-course
