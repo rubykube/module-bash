@@ -1,14 +1,22 @@
 # Fifth Bash Exercise
 
-Write a so-called mapping function that applies a command or a function name
-to all arguments provided in turn.
+Write a script that takes the argument **-m**, **-s**, **-e** or **-o**,
+followed by as many numbers as the user wishes. The script should:
+
+* Calculate the sum of all numbers if **-s** is provided
+* The sum of even numbers if **-e** is provided
+* The sum of odd numbers if **-o** is provided
+* The mean if **-m** is provided
+* Give an error if none of the arguments are given
 
 ---
 
-You can copy the code to a fresh file and add the
-following lines in order to understand **map** more closely:
+Some ideas:
 
-`map echo "some" "variables on the" "commandline"`
-`cd ~/bash-course #replace by dir where you downloaded the git into`
-`map head "resources/testfile" "resources/matrices/3.mtx."`
-
+* In both cases you will need to calculate the sum, so try to get that working
+first.
+* As you know **bc** evaluates expressions given to it on *stdin*, so try to built
+an appropriate sum expression from all commandline arguments using a
+loop. This you **echo** to **bc** in order to get the sum.
+* You may assume that users are nice and will only provide valid strings as
+the number arguments to your script.

@@ -1,22 +1,22 @@
 # Fourth Bash Exercise
 
-Write a script that takes the argument **-m**, **-s**, **-e** or **-o**,
-followed by as many numbers as the user wishes. The script should:
-
-* Calculate the sum of all numbers if **-s** is provided
-* The sum of even numbers if **-e** is provided
-* The sum of odd numbers if **-o** is provided
-* The mean if **-m** is provided
-* Give an error if none of the arguments are given
+**find** is a really handy program to search for files
+and directories with uncountable options (see **man find**). **find** per default searches through all
+directories and subdirectories and prints the relative paths of all files satisfying
+the conditions to *stdout*. All options you provide are connected using a logical
+*and*. This can of cause all be changed (see documentation). If you have never
+used **find** before, try the following:
+* **find -name "*.sh"**
+* **find -type f -name "*.sh"**
+* **find $HOME -type d -name "*bash*"**
 
 ---
 
-Some ideas:
-
-* In both cases you will need to calculate the sum, so try to get that working
-first.
-* As you know **bc** evaluates expressions given to it on *stdin*, so try to built
-an appropriate sum expression from all commandline arguments using a
-loop. This you **echo** to **bc** in order to get the sum.
-* You may assume that users are nice and will only provide valid strings as
-the number arguments to your script.
+In this exercise you should build a **grep_all** script:
+* The script should search for all files in or below the working directory
+(using **find**)
+* In all files found, the script should grep for the pattern provided on **$1**
+and it should print to *stdout* in which files and on which line the match
+occurred.
+* The simplest way to achieve this is to pipe the output of **find** to **while
+read** line.
