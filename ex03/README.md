@@ -1,7 +1,7 @@
 # Third Bash Exercise
 
 **find** is a really handy program to search for files
-and directories with uncountable options (see **man find**).**find** per default searches through all
+and directories with uncountable options (see **man find**). **find** per default searches through all
 directories and subdirectories and prints the relative paths of all files satisfying
 the conditions to *stdout*. All options you provide are connected using a logical
 *and*. This can of cause all be changed (see documentation). If you have never
