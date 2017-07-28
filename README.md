@@ -34,6 +34,10 @@ $ ./install.sh $HOME/root
 ## Useful Bash Resources
 
 • [Shellcheck provides shell script guidelines and help](http://www.shellcheck.net/)
+
 • [The Linux Documentation Project Guides](http://tldp.org/guides.html)
+
 • [Bash man page](https://linux.die.net/man/1/bash)
+
 • Also thanks for [material for the advanced bash scripting course at Heidelberg University](https://github.com/mfherbst/bash-course)
+
