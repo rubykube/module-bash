@@ -21,7 +21,9 @@ The final exercises will be concerned with the extraction of information (e.g.
 from files)using so-called regular expressions and programs like awk, sed or grep.
 
 
+
 Running the Tests
+
 
 
 As there isn't much of a bash ecosystem, there also isn't really a defacto leader
@@ -38,7 +40,9 @@ https://codeload.github.com/sstephenson/bats/tar.gz/v0.4.0
 ==>./install.sh /opt/boxen/homebrew/Cellar/bats/0.4.0/opt/boxen/homebrew/Cellar/bats/0.4.0: 10 files, 60K, built in 2 seconds           
 
 
+
 Useful Bash Resources
+
 
 •http://www.shellcheck.net/                                                             
 •http://tldp.org/guides.html                                                            
