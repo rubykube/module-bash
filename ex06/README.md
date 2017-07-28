@@ -1,13 +1,16 @@
 # Sixth Bash Exercise
 
-Consider the first *n* lines of the file **surnames.txt**
+Write a so-called mapping function that applies a command or a function name
+to all arguments provided in turn.
 
-* First use head to only generate a derived file containing just the first *n*
-lines
+---
 
-Write a bash one-liner using **sed** and **grep** that generates a list of the
-surnames of all *Q-Chem* authors:
+You can copy the code to a fresh file and add the
+following lines in order to understand **map** more closely:
 
-* Remove all initials and bothering "**.**" or "**-**" symbols (Do not remove the
-"**-**" on compound surnames!)
-* Replace all `,` by `\n`, the escape sequence for a line break.
+`map echo "some" "variables on the" "commandline"` 
+
+`cd ~/bash-course #replace by dir where you downloaded the git into` 
+
+`map head "resources/testfile" "resources/matrices/3.mtx."`
+
