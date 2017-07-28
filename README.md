@@ -35,7 +35,7 @@ $ brew install bats
 https://github.com/sstephenson/bats/archive/v0.4.0.tar.gz                          
 ==> Downloading from                                                              
 https://codeload.github.com/sstephenson/bats/tar.gz/v0.4.0                          
-######################################################################## 100.0%      
+#################################################################### 100.0%      
 ==> ./install.sh /opt/boxen/homebrew/Cellar/bats/0.4.0                              
 /opt/boxen/homebrew/Cellar/bats/0.4.0: 10 files, 60K, built in 2 seconds           
 
