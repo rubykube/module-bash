@@ -1,8 +1,8 @@
 # Sixth Bash Exercise
 
-Consider the first 48 lines of the file **surnames.txt**
+Consider the first *n* lines of the file **surnames.txt**
 
-* First use head to only generate a derived file containing just the first "n"
+* First use head to only generate a derived file containing just the first *n*
 lines
 
 Write a bash one-liner using **sed** and **grep** that generates a list of the

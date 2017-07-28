@@ -1,6 +1,6 @@
 # Fourth Bash Exercise
 
-Write a script that takes the argument **-m**, **-s**, **-o** or **-o**,
+Write a script that takes the argument **-m**, **-s**, **-e** or **-o**,
 followed by as many numbers as the user wishes. The script should:
 
 * Calculate the sum of all numbers if **-s** is provided
