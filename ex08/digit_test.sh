@@ -5,7 +5,7 @@
 
  [ "$status" -eq 0 ]
  [ "$output" = "10 zeroes, 13 ones, 4 twoes, 7 threes, 3 fours, 3 fives, 0 sixs, 0 sevens, 0 eights, 1 nines" ]
-}
+
 
 @test "Too many arguments" {
  run bash digit.sh resources/digitfile.txt digit.txt
