@@ -7,9 +7,6 @@ becomes when used with regular expressions:
 string contains the number “456”, the regex should match “4”, “5” and
 “6” *separately* and not “456” as a whole.
 
-* Use **grep -o** together with this expression on the file resources/digitfile.txt 
-You should get a list of single digits.
-
 * Now pipe this result in some appropriate Unix tools in order to find out
 how many times each digit is contained in the file. The output should be
 some sort of a table telling you that there are e.g. 2 fours, 3 twos, . . .

@@ -4,8 +4,8 @@
  run bash digit.sh resources/digitfile.txt
 
  [ "$status" -eq 0 ]
- [ "$output" = "11 zeroes, 10 ones, 9 twoes, 8 threes, 7 fours, 6 fives, 5 sixs, 3 sevens, 2 eights, 1 nines" ]
-}
+ [ "$output" = "10 zeroes, 13 ones, 4 twoes, 7 threes, 3 fours, 3 fives, 0 sixs, 0 sevens, 0 eights, 1 nines" ]
+
 
 @test "Too many arguments" {
  run bash digit.sh resources/digitfile.txt digit.txt
