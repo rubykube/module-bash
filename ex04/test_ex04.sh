@@ -1,10 +1,10 @@
-#!/usr/bin/
+#!/usr/bin/env bats
 
 @test "Default" {
-  run bash grep_all.sh Hello text_1.txt 
+  run bash grep_all.sh Hello resources/text_1.txt 
 
   [ "$status" -eq 0 ]
-  [ "$output" = "text_1.txt
+  [ "$output" = "resources/text_1.txt
 1
 7
 11" ]
@@ -34,10 +34,10 @@
 }
 
 @test "Using number" {
-  run bash grep_all.sh 123 numbers.txt
+  run bash grep_all.sh 123 resources/numbers.txt
 
   [ "$status" -eq 0 ]
-  [ "$output" = "numbers.txt
+  [ "$output" = "resources/numbers.txt
 1
 8" ]
 }
