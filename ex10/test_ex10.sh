@@ -14,11 +14,11 @@
   [ "$output" = '32 resources/text_2.txt' ]
 }
 
-@test "With empty lines" {
+@test "empty file" {
   run bash ex10.sh resources/text_3.txt
 
   [ "$status" -eq 0 ]
-  [ "$output" = '0 resourcestext_3.txt' ]
+  [ "$output" = '1 resources/text_3.txt' ]
 }
 
 @test "with directory" {
