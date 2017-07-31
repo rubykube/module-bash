@@ -36,13 +36,13 @@
 
 @test "only empty lines" {
   run bash ex10.sh resources/text_5.txt
-  [ "$status" -eq 0]
+  [ "$status" -eq 0 ]
   [ "$output" = "20 resources/text_5.txt" ]
 }
 
 @test "with 2 files" {
   run bash ex10.sh resources/text_5.txt resources/text_4.txt
-  [ "$status" -eq 0]
+  [ "$status" -eq 0 ]
   [ "$output" = "20 resources/text_5.txt
 14 resources/text_4.txt" ]
 }
