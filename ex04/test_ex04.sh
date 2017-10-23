@@ -1,7 +1,7 @@
 #!/usr/bin/
 
 @test "Default" {
-  run bash grep_all.sh Hello text_1.txt 
+  run bash ex04.sh Hello resources/text_1.txt 
 
   [ "$status" -eq 0 ]
   [ "$output" = "text_1.txt
@@ -11,14 +11,14 @@
 }
 
 @test "No args" {
-  run bash grep_all.sh
+  run bash resources/ex04.sh
 
   [ "$status" -eq 1 ]
   [ "$output" = '' ]
 }
 
 @test "Without first arg" {
-  run bash grep_all.sh  text_2.txt
+  run bash grep_all.sh  resources/text_2.txt
 
   [ "$status" -eq 1 ]
   [ "$output" = '' ]
@@ -27,14 +27,14 @@
 
 @test "Without second arg" {
  
-  run bash grep_all.sh Hello 
+  run bash ex04.sh Hello 
 
   [ "$status" -eq 1 ]
   [ "$output" = '' ]
 }
 
 @test "Using number" {
-  run bash grep_all.sh 123 numbers.txt
+  run bash ex04.sh 123 resources/numbers.txt
 
   [ "$status" -eq 0 ]
   [ "$output" = "numbers.txt

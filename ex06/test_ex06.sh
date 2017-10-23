@@ -1,6 +1,6 @@
 #!/usr/bin/env bats
 
-source ./map.sh
+source ./ex06.sh
 
 @test "echo" {
   run map echo echo
