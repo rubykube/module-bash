@@ -1,13 +1,9 @@
 #!/bin/bash
 
-output=$1 
-if [ "$output" = "Alice" ]; 
+output=$1
+if [ -n "$output" ];
 then
-  echo "Hello, Alice!"
-elif  [ "$output" = "Bob" ];
-then
-  echo "Hello, Bob!"
-else 
-  echo "Hello, World!"
-fi  
+  echo "Hello, $output!" 
+  else echo "Hello, World!"
+fi    
 
