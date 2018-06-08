@@ -1,7 +1,7 @@
 #!/bin/bash
 
 @test "Default" {
-  run bash ex02.sh resources/1 Ipsum is and
+  run bash ex03.sh resources/1 Ipsum is and
 
   [ "$status" -eq 0 ]
   [ "$output" = "Ipsum 4
@@ -21,14 +21,14 @@ and 4
 }
 
 @test "No args" {
-  run bash ex02.sh
+  run bash ex03.sh
 
   [ "$status" -eq 1 ]
   [ "$output" = '' ]
 }
 
 @test "Without right args" {
-  run bash ex02.sh resources/1 Helios Technologies Great
+  run bash ex03.sh resources/1 Helios Technologies Great
 
   [ "$status" -eq 0 ]
   [ "$output" = 'Helios 0
@@ -38,7 +38,7 @@ Great 0' ]
 
 
 @test "With empty lines" {
-  run bash ex02.sh resources/3 like page sometimes
+  run bash ex03.sh resources/3 like page sometimes
 
   [ "$status" -eq 0 ]
   [ "$output" = 'like 2
@@ -53,7 +53,7 @@ sometimes 2
 }
 
 @test "with number" {
-  run bash ex02.sh resources/4 1.10.32 2000 45
+  run bash ex03.sh resources/4 1.10.32 2000 45
 
   [ "$status" -eq 0 ]
   [ "$output" = "1.10.32 3
