@@ -1,4 +1,4 @@
-if [[ $# -eq "0" ]] || [[ $# -gt "1" ]]; then
+if [ $# -eq "0" ] || [ $# -gt "1" ]; then
 	echo "Too many(few) arguments"
 	exit 1
 fi
