@@ -11,4 +11,4 @@ Write a script that
 
 	..*script operates ONLY FULL WORDS(e.g. FIND, FOLDER, etc)
 
-	..*search is maked in original case only (FILE != file )
+	..*search is made in original case only (FILE != file )
