@@ -21,13 +21,13 @@
 }
 
 @test "Test on 0 lines returns error" {
-  run ex07.sh 0
+  run bash ex07.sh 0
 
   [ "$status" -eq 1 ]
 }
 
 @test "Test on 2 lines return empty string" {
-  run ex07.sh 2
+  run bash ex07.sh 2
 
   [ "$status" -eq 0 ]
   [ "$output" = $'' ]
