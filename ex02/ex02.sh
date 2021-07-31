@@ -1,6 +1,6 @@
 #!/bin/bash
 
-grep=$( ls -R | grep -E " ${1} | ${2}")
+grep=$( ls -R | grep "$1" & ls -R | grep "$2")
 grep1=$(ls -R | grep "$1")
 
 if [ $# -eq 2 ]; then
