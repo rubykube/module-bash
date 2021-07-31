@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 IFS=' ' read -r -a arr <<< "$1"
 grep=$( ls -R | grep "${arr[0]}" & ls -R | grep "${arr[1]}")
 grep1=$(ls -R | grep "${arr[0]}")
