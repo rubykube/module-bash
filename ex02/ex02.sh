@@ -2,6 +2,7 @@
 
 if [ -z "$1" ]; then
     echo "Wrong number of arguments: expected 1, given 0"
+    exit 1
 else
     for element in $1
     do
