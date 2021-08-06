@@ -1,7 +1,5 @@
-echo -n "Hello, "
 if [ ! -z $1 ]; then
-    echo -n $1
+    echo "Hello, $1!"
 else
-    echo -n "World"
+    echo "Hello, World!"
 fi
-echo "!"
