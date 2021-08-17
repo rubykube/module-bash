@@ -2,6 +2,20 @@
 
 #set -xe
 
+function rec_ls {
+    for pattern in $1; do
+        paths= ls -R| grep $pattern
+	if [[ -z "$paths" ]]
+	then
+	    echo "NO SUCH PATH"
+        else
+	    echo "$paths"
+	fi
+    done
+}
+
+rec_ls $1
+
 @test "Existing path STR" {
   run ./ex02.sh "STR"
   [ "$status" -eq 0 ]
