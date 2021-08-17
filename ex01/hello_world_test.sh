@@ -1,5 +1,12 @@
 #!/usr/bin/env bats
 
+if [ $# -eq 0 ]
+then
+    echo "Hello, World!"
+else
+    echo "Hello, $1!"
+fi
+
 @test "When given no name, it should greet the world!" {
   run bash hello_world.sh
 
