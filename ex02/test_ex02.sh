@@ -3,7 +3,7 @@
 #set -xe
 
 @test "Existing path STR" {
-  run ./ex02.sh "STR"
+  run bash ./ex02.sh "STR"
   [ "$status" -eq 0 ]
   [ "$output" = $'STR\n./resources/FOLDER/STR:' ]
 }
