@@ -9,8 +9,7 @@
 #   working directory, which have a relative
 #   path, that matches the pattern
 ############################################
-for file in $1
-do
+for file in $@; do
    path=$(ls -R ./ | grep ${file})
    if [ -z "${path}" ]; then
       echo "the searched PATH is unexisting"
