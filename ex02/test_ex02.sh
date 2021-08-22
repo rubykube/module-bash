@@ -21,7 +21,7 @@
 }
 
 
-@test "2 existing paths" {
+@test "2 existing paths(2)" {
   run bash ex02.sh "FOLDER STR"
   [ "$status" -eq 0 ]
   [ "$output" = $'FOLDER\n./resources/FOLDER:\n./resources/FOLDER/STR:\nSTR\n./resources/FOLDER/STR:' ]
