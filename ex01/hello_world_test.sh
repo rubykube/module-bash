@@ -20,3 +20,10 @@
   [ "$status" -eq 0 ]
   [ "$output" = "Hello, Bob!" ]
 }
+
+@test 'Check called it should print Hello, World!' {
+  run bash hello_world.sh
+
+  [ "$status" -eq 0 ]
+  [ "$output" = "Hello, World!" ]
+}
