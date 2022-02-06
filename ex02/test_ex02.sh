@@ -3,7 +3,7 @@
 #set -xe
 
 @test "Existing path STR" {
-  run ./ex02.sh "STR"
+  run bash ex02.sh "STR"
   [ "$status" -eq 0 ]
   [ "$output" = $'STR\n./resources/FOLDER/STR:' ]
 }
@@ -14,14 +14,14 @@
   [ "$output" = $'FOLDER\n./resources/FOLDER:\n./resources/FOLDER/STR:' ]
 }
 
-@test "2 existing paths" {
+@test "2 existing paths (1)" {
   run bash ex02.sh "STR FOLDER"
   [ "$status" -eq 0 ]
   [ "$output" = $'STR\n./resources/FOLDER/STR:\nFOLDER\n./resources/FOLDER:\n./resources/FOLDER/STR:' ]
 }
 
 
-@test "2 existing paths" {
+@test "2 existing paths (2)" {
   run bash ex02.sh "FOLDER STR"
   [ "$status" -eq 0 ]
   [ "$output" = $'FOLDER\n./resources/FOLDER:\n./resources/FOLDER/STR:\nSTR\n./resources/FOLDER/STR:' ]
